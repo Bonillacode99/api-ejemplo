@@ -4,7 +4,7 @@ async function getAnime() {
     console.log(anime); 
     animelist=" "
     anime.data.forEach(animeA => {
-       animelist += animeA.source + " " + animeA.popularity + "<br> "+ "<img src='"+ animeA.images.webp.image_url +"'>"
+       animelist += animeA.source + " " + animeA.popularity + "<br> "+ "<img src='"+ animeA.images.webp.image_url +"'>"+ "<br> "
     })    
     console.log(animelist);
     document.getElementById("episode").innerHTML = animelist
